@@ -6,5 +6,4 @@ Bu projede bir yemek tarifi web sitesindeki her bir yemek için görüntülenece
   <img src="recipe-card.png" alt="Recipe Card"/>
 </p>
 
-<br/>
 [Referans](https://github.com/Kodluyoruz/recipe-card)
