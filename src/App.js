@@ -14,13 +14,28 @@ function App() {
 
   const likeCount = 193;
   const isLiked = false;
+  const Months = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", 
+                  "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"];
+  const Days = ["Pazar","Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"];
+  const d = new Date();
+  const day = d.getDate();
+  const month = Months[d.getMonth()];
+  const year = d.getFullYear();
+  const dayName = Days[d.getDay()];
+  const date = day + " " + month + " "+ year + ", " + dayName;
 
   return (
     <div className="App">
       <header className="App-header">
         <Card
-          /* prop ismi = { değişken } */
           author={recipeAuthor}
+          liked = {isLiked}
+          likeCount = {likeCount}
+          image = {recipeItem.image}
+          title = {recipeItem.title}
+          desc = {recipeItem.description}
+          date = {date}
+
         />
       </header>
     </div>
